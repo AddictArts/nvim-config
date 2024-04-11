@@ -4,4 +4,5 @@
 
 local opt = vim.opt
 
+-- Windows powershell use pwsh.exe
 opt.shell = "pwsh"
