@@ -3,6 +3,10 @@
 -- Add any additional options here
 
 local opt = vim.opt
+local this_os = vim.loop.os_uname().sysname
 
--- Windows powershell use pwsh.exe
-opt.shell = "pwsh"
+-- The path is different on Windows
+if this_os:find("Windows_NT") then
+  -- Windows powershell use pwsh.exe
+  opt.shell = "pwsh"
+end
