@@ -48,3 +48,9 @@ require("lazy").setup({
 
 -- Use the colorscheme catppuccin-mocha default
 vim.cmd.colorscheme("catppuccin")
+-- Justfile filetype detect that is not happening automatically
+-- from https://github.com/IndianBoy42/tree-sitter-just/blob/6c2f018ab1d90946c0ce029bb2f7d57f56895dff/ftdetect/just.vim
+-- vim.cmd.au(
+--   "VimEnter,BufWinEnter,BufRead,BufNewFile {.,}justfile\\c,*.just setlocal filetype=just | setlocal commentstring=# %s"
+-- )
+vim.filetype.add({ filename = { ["justfile"] = "just" }, pattern = { ["*.just"] = "just" } })
