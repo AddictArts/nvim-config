@@ -1,7 +1,7 @@
 return {
-  "sindrets/diffview.nvim", -- optional - Diff integration
+  "sindrets/diffview.nvim",
   dependencies = {
-    "nvim-lua/plenary.nvim", -- required
+    "nvim-lua/plenary.nvim",
   },
   keys = {
     {
