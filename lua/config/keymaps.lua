@@ -5,5 +5,7 @@
 local map = vim.keymap.set
 
 map("n", "<leader>si", ":Telescope treesitter <CR>", { desc = "List Treesitter ..." })
+-- Outline extra configured via plugins
+-- map("n", "<leader>cO", ":Outline <CR>", { desc = "Toggle Outline" })
 -- Neovim Qt Windows paste into command mode
 map("c", "<C-v>", "<C-R>+")
