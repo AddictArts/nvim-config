@@ -4,7 +4,7 @@ return {
     { "<leader>cs", false },
     {
       "<leader>cO",
-      ":Outline <CR>",
+      "<cmd>Outline <CR>",
       mode = "n",
       desc = "Toggle Outline",
     },

@@ -9,7 +9,7 @@ return {
   keys = {
     -- {
     --   "<leader>gn",
-    --   ":Neogit <CR>",
+    --   "<cmd>Neogit <CR>",
     --   mode = "",
     --   desc = "Neogit",
     -- },

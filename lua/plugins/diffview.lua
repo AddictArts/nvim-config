@@ -6,25 +6,25 @@ return {
   keys = {
     {
       "<leader>gdo",
-      ":DiffviewOpen <CR>",
+      "<cmd>DiffviewOpen <CR>",
       mode = "",
       desc = "DiffviewOpen",
     },
     {
       "<leader>gdc",
-      ":DiffviewClose <CR>",
+      "<cmd>DiffviewClose <CR>",
       mode = "",
       desc = "DiffviewClose",
     },
     {
       "<leader>gdf",
-      ":DiffviewToggleFiles <CR>",
+      "<cmd>DiffviewToggleFiles <CR>",
       mode = "",
       desc = "DiffviewToggleFiles",
     },
     {
       "<leader>gdh",
-      ":DiffviewFileHistory <CR>",
+      "<cmd>DiffviewFileHistory <CR>",
       mode = "",
       desc = "DiffviewFileHistory",
     },
