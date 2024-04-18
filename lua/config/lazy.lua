@@ -54,3 +54,9 @@ vim.cmd.colorscheme("catppuccin")
 --   "VimEnter,BufWinEnter,BufRead,BufNewFile {.,}justfile\\c,*.just setlocal filetype=just | setlocal commentstring=# %s"
 -- )
 vim.filetype.add({ filename = { ["justfile"] = "just" }, pattern = { ["*.just"] = "just" } })
+
+-- global command pretty print
+P = function(v)
+  print(vim.inspect(v))
+  return v
+end
