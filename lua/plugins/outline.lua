@@ -2,7 +2,7 @@ return {
   "hedyhli/outline.nvim",
   dependencies = {
     -- "The `edgy.nvim` must be **imported** before the `outline.nvim` extra to work properly.",
-    "folke/edgy.nvim",
+    -- "folke/edgy.nvim",
   },
   keys = { { "<leader>cO", "<cmd>Outline<cr>", desc = "Toggle Outline" } },
   cmd = "Outline",
