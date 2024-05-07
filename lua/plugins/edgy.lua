@@ -1,9 +1,6 @@
 -- edgy outline integration
 return {
   "folke/edgy.nvim",
-  -- dependencies = {
-  --   "hedyhli/outline.nvim",
-  -- },
   event = "VeryLazy",
   opts = function(_, opts)
     -- local edgy_idx = LazyVim.plugin.extra_idx("ui.edgy")
@@ -16,6 +13,7 @@ return {
     --   )
     -- end
 
+    -- opts.keys = {}
     opts.animate = { enabled = false }
     opts.right = opts.right or {}
     table.insert(opts.right, {
