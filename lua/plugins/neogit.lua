@@ -7,12 +7,12 @@ return {
     "nvim-telescope/telescope.nvim", -- optional
   },
   keys = {
-    -- {
-    --   "<leader>gn",
-    --   "<cmd>Neogit <CR>",
-    --   mode = "",
-    --   desc = "Neogit",
-    -- },
+    {
+      "<leader>gn",
+      "<cmd>Neogit <CR>",
+      mode = "",
+      desc = "Neogit",
+    },
   },
   config = true,
   opts = {
