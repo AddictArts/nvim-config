@@ -11,3 +11,14 @@ map("n", "<leader>si", "<cmd>Telescope treesitter <CR>", { desc = "List Treesitt
 
 -- Neovim Qt Windows paste into command mode
 map("c", "<C-v>", "<C-R>+")
+
+-- Lsp ... for now
+map("n", "<leader>cLT", function()
+  for _, server in ipairs(vim.lsp.get_active_clients()) do
+    if server.name == "tsserver" then
+      vim.lsp.get_client_by_id(server.id).stop()
+    end
+  end
+end, { desc = "Stop tsserver" })
+
+map("n", "<leader>cLt", "<cmd>LspStart tsserver <CR>", { desc = "Start tsserver" })
