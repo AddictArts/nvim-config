@@ -10,3 +10,6 @@ if this_os:find("Windows_NT") then
   -- Windows powershell use pwsh.exe
   opt.shell = "pwsh"
 end
+
+-- Don't persist marks, for now neovim 0.10 has the fix.
+opt.shada = "'0,f0"
