@@ -22,3 +22,10 @@ map("n", "<leader>cLT", function()
 end, { desc = "Stop tsserver" })
 
 map("n", "<leader>cLt", "<cmd>LspStart tsserver <CR>", { desc = "Start tsserver" })
+
+local create_user_command = vim.api.nvim_create_user_command
+
+-- create_user_command("InlayHintsToggle", function()
+--   ...
+-- end, { desc = "Enable/Disable inlay hints on current buffer" })
+create_user_command("InlayHintsToggle", require("lsp-inlayhints").toggle(), { desc = "Toggle inlay hints" })
