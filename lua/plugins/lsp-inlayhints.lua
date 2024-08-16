@@ -33,7 +33,7 @@ return {
         "n",
         "<leader>uI",
         "<cmd>lua require('lsp-inlayhints').toggle()<CR>",
-        { noremap = true, silent = true }
+        { desc = "Toggle inlay hints", noremap = true, silent = true }
       )
     end,
   },
